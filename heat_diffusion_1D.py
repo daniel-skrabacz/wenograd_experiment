@@ -75,7 +75,7 @@ t_20 = 20e-6
 t_50 = 50e-6
 t_80 = 80e-6
 t_100 = 100e-6
-zeta = 3.6994949494949494e-07#2.17e-7
+zeta = 4e-7
 my_temp1 = [tempDiff(i,t_1,zeta) for i in x]
 my_temp10 = [tempDiff(i,t_10,zeta) for i in x]
 my_temp100 = [tempDiff(i,t_20,zeta) for i in x]
@@ -91,7 +91,7 @@ plt.plot(x,my_temp1000)
 plt.plot(x,my_temp5000)
 plt.xlabel("Distance (meters)")
 plt.ylabel("Temperature (K)")
-plt.title('Erythritol 1-D Diffusion')
+plt.title('1-D Diffusion')
 # plt.legend([my_temp1, my_temp10, my_temp100, my_temp500, my_temp1000, my_temp5000],['1us', '10us', '100us', '500us', '1ms', '5ms'],loc='upper right')
 
 
