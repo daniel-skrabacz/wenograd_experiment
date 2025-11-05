@@ -2,7 +2,7 @@
 """
 Created on Wed Nov 17 12:21:15 2021
 Performing Mesh Analysis on Wheatstone Bridge with resistor at the bridge
-@author: 322842
+@author: Daniel Skrabacz
 """
 
 #%% Import Library
@@ -10,7 +10,7 @@ Performing Mesh Analysis on Wheatstone Bridge with resistor at the bridge
 from sympy import *
 
 #%% Define symbols
-# This is per the my definition of the circuit
+# This is per my definition of the circuit
 
 R1, R2, R3, R4, Rg, I1, I2, I3, Vs = symbols('R1, R2, R3, R4, Rg, I1, I2, I3, Vs')
 
@@ -79,4 +79,5 @@ def findAlpha(T,Tref, R, Rref):
     myT = 1/(T-Tref)
     myR = (R/Rref) - 1
     alpha = myT*myR
+
     return alpha
